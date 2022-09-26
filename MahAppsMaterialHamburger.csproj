@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0-windows</TargetFrameworks>
+    <OutputType>WinExe</OutputType>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <LangVersion>9.0</LangVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <UseWPF>true</UseWPF>
+
+    <AssemblyTitle>MahAppsMaterialHamburger</AssemblyTitle>
+    <Description></Description>
+    <Configuration></Configuration>
+    <Company></Company>
+    <Copyright>Copyright © Carsten Riedel 2022</Copyright>
+    <Product></Product>
+    <FileVersion>0.0.0.1</FileVersion>
+    <AssemblyVersion></AssemblyVersion>
+    <InformationalVersion></InformationalVersion>
+    <NeutralLanguage></NeutralLanguage>
+  </PropertyGroup>
+
+  <!-- Add the references for all projects and targets -->
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2022.1.0" />
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="4.11.0" />
+    <PackageReference Include="MaterialDesignThemes.MahApps" Version="0.2.3" />
+    <PackageReference Include="WpfAnalyzers" Version="4.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\AboutView.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\HomeView.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\PrivateView.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\SettingsView.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Glyph\check.png" />
+    <Resource Include="Assets\Glyph\heart.png" />
+    <Resource Include="Assets\Glyph\settings.png" />
+    <Resource Include="Assets\Glyph\user.png" />
+    <Resource Include="Assets\Title\bar.png" />
+  </ItemGroup>
+</Project>
